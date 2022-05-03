@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC90FB562811A52B00F329E3 /* tabakoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90FB552811A52B00F329E3 /* tabakoApp.swift */; };
+		AC90FB582811A52B00F329E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90FB572811A52B00F329E3 /* ContentView.swift */; };
+		AC90FB5A2811A53100F329E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC90FB592811A53100F329E3 /* Assets.xcassets */; };
+		AC90FB5D2811A53100F329E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC90FB5C2811A53100F329E3 /* Preview Assets.xcassets */; };
+		AC90FB672811A53200F329E3 /* tabakoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90FB662811A53100F329E3 /* tabakoTests.swift */; };
+		AC90FB712811A53200F329E3 /* tabakoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90FB702811A53200F329E3 /* tabakoUITests.swift */; };
+		AC90FB732811A53200F329E3 /* tabakoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90FB722811A53200F329E3 /* tabakoUITestsLaunchTests.swift */; };
+		AC90FB802811A82700F329E3 /* tabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90FB7F2811A82700F329E3 /* tabbarModel.swift */; };
+		ACA6DB6C2811AD5F00ECA3AC /* tabacotabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6DB6B2811AD5F00ECA3AC /* tabacotabbar.swift */; };
+		ACA6DB6E2811ADE700ECA3AC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6DB6D2811ADE700ECA3AC /* MainView.swift */; };
+		ACA6DB702811AED500ECA3AC /* TabacoSumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6DB6F2811AED500ECA3AC /* TabacoSumView.swift */; };
+		ACA6DB732811AF2400ECA3AC /* OneTabacoCaluView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6DB722811AF2400ECA3AC /* OneTabacoCaluView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC90FB632811A53100F329E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC90FB4A2811A52B00F329E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC90FB512811A52B00F329E3;
+			remoteInfo = tabako;
+		};
+		AC90FB6D2811A53200F329E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC90FB4A2811A52B00F329E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC90FB512811A52B00F329E3;
+			remoteInfo = tabako;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC90FB522811A52B00F329E3 /* tabako.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabako.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC90FB552811A52B00F329E3 /* tabakoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabakoApp.swift; sourceTree = "<group>"; };
+		AC90FB572811A52B00F329E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC90FB592811A53100F329E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC90FB5C2811A53100F329E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC90FB622811A53100F329E3 /* tabakoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabakoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC90FB662811A53100F329E3 /* tabakoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabakoTests.swift; sourceTree = "<group>"; };
+		AC90FB6C2811A53200F329E3 /* tabakoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabakoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC90FB702811A53200F329E3 /* tabakoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabakoUITests.swift; sourceTree = "<group>"; };
+		AC90FB722811A53200F329E3 /* tabakoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabakoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC90FB7F2811A82700F329E3 /* tabbarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbarModel.swift; sourceTree = "<group>"; };
+		ACA6DB6B2811AD5F00ECA3AC /* tabacotabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabacotabbar.swift; sourceTree = "<group>"; };
+		ACA6DB6D2811ADE700ECA3AC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		ACA6DB6F2811AED500ECA3AC /* TabacoSumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabacoSumView.swift; sourceTree = "<group>"; };
+		ACA6DB722811AF2400ECA3AC /* OneTabacoCaluView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTabacoCaluView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC90FB4F2811A52B00F329E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC90FB5F2811A53100F329E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC90FB692811A53200F329E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC90FB492811A52B00F329E3 = {
+			isa = PBXGroup;
+			children = (
+				AC90FB542811A52B00F329E3 /* tabako */,
+				AC90FB652811A53100F329E3 /* tabakoTests */,
+				AC90FB6F2811A53200F329E3 /* tabakoUITests */,
+				AC90FB532811A52B00F329E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC90FB532811A52B00F329E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC90FB522811A52B00F329E3 /* tabako.app */,
+				AC90FB622811A53100F329E3 /* tabakoTests.xctest */,
+				AC90FB6C2811A53200F329E3 /* tabakoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC90FB542811A52B00F329E3 /* tabako */ = {
+			isa = PBXGroup;
+			children = (
+				ACA6DB6A2811A91100ECA3AC /* Model */,
+				ACA6DB692811A90700ECA3AC /* ViewModel */,
+				ACA6DB682811A8ED00ECA3AC /* View */,
+				AC90FB592811A53100F329E3 /* Assets.xcassets */,
+				AC90FB5B2811A53100F329E3 /* Preview Content */,
+			);
+			path = tabako;
+			sourceTree = "<group>";
+		};
+		AC90FB5B2811A53100F329E3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC90FB5C2811A53100F329E3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC90FB652811A53100F329E3 /* tabakoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC90FB662811A53100F329E3 /* tabakoTests.swift */,
+			);
+			path = tabakoTests;
+			sourceTree = "<group>";
+		};
+		AC90FB6F2811A53200F329E3 /* tabakoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC90FB702811A53200F329E3 /* tabakoUITests.swift */,
+				AC90FB722811A53200F329E3 /* tabakoUITestsLaunchTests.swift */,
+			);
+			path = tabakoUITests;
+			sourceTree = "<group>";
+		};
+		ACA6DB682811A8ED00ECA3AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC90FB552811A52B00F329E3 /* tabakoApp.swift */,
+				ACA6DB6D2811ADE700ECA3AC /* MainView.swift */,
+				ACA6DB6F2811AED500ECA3AC /* TabacoSumView.swift */,
+				ACA6DB722811AF2400ECA3AC /* OneTabacoCaluView.swift */,
+				AC90FB572811A52B00F329E3 /* ContentView.swift */,
+				ACA6DB712811AEDD00ECA3AC /* subView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACA6DB692811A90700ECA3AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACA6DB6A2811A91100ECA3AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC90FB7F2811A82700F329E3 /* tabbarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACA6DB712811AEDD00ECA3AC /* subView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA6DB6B2811AD5F00ECA3AC /* tabacotabbar.swift */,
+			);
+			path = subView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC90FB512811A52B00F329E3 /* tabako */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC90FB762811A53200F329E3 /* Build configuration list for PBXNativeTarget "tabako" */;
+			buildPhases = (
+				AC90FB4E2811A52B00F329E3 /* Sources */,
+				AC90FB4F2811A52B00F329E3 /* Frameworks */,
+				AC90FB502811A52B00F329E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tabako;
+			productName = tabako;
+			productReference = AC90FB522811A52B00F329E3 /* tabako.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC90FB612811A53100F329E3 /* tabakoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC90FB792811A53200F329E3 /* Build configuration list for PBXNativeTarget "tabakoTests" */;
+			buildPhases = (
+				AC90FB5E2811A53100F329E3 /* Sources */,
+				AC90FB5F2811A53100F329E3 /* Frameworks */,
+				AC90FB602811A53100F329E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC90FB642811A53100F329E3 /* PBXTargetDependency */,
+			);
+			name = tabakoTests;
+			productName = tabakoTests;
+			productReference = AC90FB622811A53100F329E3 /* tabakoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC90FB6B2811A53200F329E3 /* tabakoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC90FB7C2811A53200F329E3 /* Build configuration list for PBXNativeTarget "tabakoUITests" */;
+			buildPhases = (
+				AC90FB682811A53200F329E3 /* Sources */,
+				AC90FB692811A53200F329E3 /* Frameworks */,
+				AC90FB6A2811A53200F329E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC90FB6E2811A53200F329E3 /* PBXTargetDependency */,
+			);
+			name = tabakoUITests;
+			productName = tabakoUITests;
+			productReference = AC90FB6C2811A53200F329E3 /* tabakoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC90FB4A2811A52B00F329E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					AC90FB512811A52B00F329E3 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					AC90FB612811A53100F329E3 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = AC90FB512811A52B00F329E3;
+					};
+					AC90FB6B2811A53200F329E3 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = AC90FB512811A52B00F329E3;
+					};
+				};
+			};
+			buildConfigurationList = AC90FB4D2811A52B00F329E3 /* Build configuration list for PBXProject "tabako" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC90FB492811A52B00F329E3;
+			productRefGroup = AC90FB532811A52B00F329E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC90FB512811A52B00F329E3 /* tabako */,
+				AC90FB612811A53100F329E3 /* tabakoTests */,
+				AC90FB6B2811A53200F329E3 /* tabakoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC90FB502811A52B00F329E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC90FB5D2811A53100F329E3 /* Preview Assets.xcassets in Resources */,
+				AC90FB5A2811A53100F329E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC90FB602811A53100F329E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC90FB6A2811A53200F329E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC90FB4E2811A52B00F329E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC90FB582811A52B00F329E3 /* ContentView.swift in Sources */,
+				AC90FB562811A52B00F329E3 /* tabakoApp.swift in Sources */,
+				ACA6DB702811AED500ECA3AC /* TabacoSumView.swift in Sources */,
+				AC90FB802811A82700F329E3 /* tabbarModel.swift in Sources */,
+				ACA6DB6E2811ADE700ECA3AC /* MainView.swift in Sources */,
+				ACA6DB6C2811AD5F00ECA3AC /* tabacotabbar.swift in Sources */,
+				ACA6DB732811AF2400ECA3AC /* OneTabacoCaluView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC90FB5E2811A53100F329E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC90FB672811A53200F329E3 /* tabakoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC90FB682811A53200F329E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC90FB732811A53200F329E3 /* tabakoUITestsLaunchTests.swift in Sources */,
+				AC90FB712811A53200F329E3 /* tabakoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC90FB642811A53100F329E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC90FB512811A52B00F329E3 /* tabako */;
+			targetProxy = AC90FB632811A53100F329E3 /* PBXContainerItemProxy */;
+		};
+		AC90FB6E2811A53200F329E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC90FB512811A52B00F329E3 /* tabako */;
+			targetProxy = AC90FB6D2811A53200F329E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC90FB742811A53200F329E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC90FB752811A53200F329E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC90FB772811A53200F329E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tabako/Preview Content\"";
+				DEVELOPMENT_TEAM = 5T223526JN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuumakohsaka.tabako;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC90FB782811A53200F329E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tabako/Preview Content\"";
+				DEVELOPMENT_TEAM = 5T223526JN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuumakohsaka.tabako;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC90FB7A2811A53200F329E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T223526JN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuumakohsaka.tabakoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tabako.app/tabako";
+			};
+			name = Debug;
+		};
+		AC90FB7B2811A53200F329E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T223526JN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuumakohsaka.tabakoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tabako.app/tabako";
+			};
+			name = Release;
+		};
+		AC90FB7D2811A53200F329E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T223526JN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuumakohsaka.tabakoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tabako;
+			};
+			name = Debug;
+		};
+		AC90FB7E2811A53200F329E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T223526JN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuumakohsaka.tabakoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tabako;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC90FB4D2811A52B00F329E3 /* Build configuration list for PBXProject "tabako" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC90FB742811A53200F329E3 /* Debug */,
+				AC90FB752811A53200F329E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC90FB762811A53200F329E3 /* Build configuration list for PBXNativeTarget "tabako" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC90FB772811A53200F329E3 /* Debug */,
+				AC90FB782811A53200F329E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC90FB792811A53200F329E3 /* Build configuration list for PBXNativeTarget "tabakoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC90FB7A2811A53200F329E3 /* Debug */,
+				AC90FB7B2811A53200F329E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC90FB7C2811A53200F329E3 /* Build configuration list for PBXNativeTarget "tabakoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC90FB7D2811A53200F329E3 /* Debug */,
+				AC90FB7E2811A53200F329E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC90FB4A2811A52B00F329E3 /* Project object */;
+}
