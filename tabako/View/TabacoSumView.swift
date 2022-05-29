@@ -22,11 +22,12 @@ struct TabacoSumView: View {
         ZStack{
             
             Color(red: 0.96, green: 0.96, blue: 0.96)
-                .ignoresSafeArea()
+                
             
             VStack{
                 
                 ZStack{
+                    
                     Rectangle()
                         .frame(width: 335, height: 150)
                         .foregroundColor(.white)
@@ -36,7 +37,6 @@ struct TabacoSumView: View {
                         )
                     
                     VStack{
-                        
                         Text("合計額")
                             .font(.title.bold())
                             .padding()
@@ -46,10 +46,7 @@ struct TabacoSumView: View {
                             .foregroundColor(.black)
                             .padding()
                     }
-                    
-                    
                 }
-                
                 
                 HStack{
                            
@@ -96,6 +93,7 @@ struct TabacoSumView: View {
                         .background(Color.gray
                             .offset(x: 3, y: 3)
                         )
+                        
                     
                     VStack{
                         Text("あなたのたばこ総消費額は")
@@ -121,6 +119,8 @@ struct TabacoSumView: View {
         }
         
     }
+    
+    
     
     func showImage() -> AnyView{
         switch self.SumpriceOfTabaco{
@@ -152,6 +152,14 @@ struct TabacoSumView: View {
             return AnyView(Image("15man").resizable().scaledToFit())
         case 300000...499999:
             return AnyView(Image("30man").resizable().scaledToFit())
+        case 500000...999999:
+            return AnyView(Image("50man").resizable().scaledToFit())
+        case 1000000...4999999:
+            return AnyView(Image("100man").resizable().scaledToFit())
+        case 5000000...9999999:
+            return AnyView(Image("500man").resizable().scaledToFit())
+        case 10000000...30000000:
+            return AnyView(Image("1000man").resizable().scaledToFit())
                 
         default:
             return AnyView(Image("default").resizable().scaledToFit())
@@ -188,6 +196,14 @@ struct TabacoSumView: View {
                 return AnyView(Text("冷蔵庫1台分です"))
             case 300000...499999:
                 return AnyView(Text("贅沢なハワイ旅行1回分です"))
+            case 500000...999999:
+                return AnyView(Text("高級腕時計1個分です"))
+            case 1000000...4999999:
+                return AnyView(Text("軽自動車1台分です"))
+            case 5000000...9999999:
+                return AnyView(Text("田舎の住宅1軒分です"))
+            case 10000000...30000000:
+                return AnyView(Text("高級スポーツカー1台分です"))
                 
                 
                 
@@ -201,7 +217,7 @@ struct TabacoSumView: View {
 
 struct TabacoSumView_Previews: PreviewProvider {
     static var previews: some View {
-        TabacoSumView(result: .constant(0.0))
+        TabacoSumView(result: .constant(156.0))
     }
 }
 

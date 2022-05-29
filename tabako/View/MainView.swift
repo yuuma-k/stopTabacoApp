@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import CoreLocation
-import CoreLocationUI
 
 struct MainView: View {
     
