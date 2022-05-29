@@ -27,7 +27,8 @@ struct OneTabacoCaluView: View {
                 ZStack{
                     
                     Rectangle()
-                        .frame(width: 335, height: 375)
+                        .frame(minWidth: 295, maxWidth: 335, minHeight: 310, maxHeight: 375, alignment: .center)
+                        .aspectRatio(contentMode: .fit)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .background(Color.gray
@@ -40,21 +41,25 @@ struct OneTabacoCaluView: View {
                             .font(.title2.bold())
                             .frame(width: 300, height: 50, alignment: .leading)
                             .foregroundColor(.black)
+                            .aspectRatio(contentMode: .fit)
                         
                         TextField("１箱あたりの価格", text: self.$priceOfBox ).keyboardType(.numberPad)
                             .background(Color.white)
                             .cornerRadius(5)
                             .frame(width: 300, height: 50)
+                            .aspectRatio(contentMode: .fit)
                         
                         Text("１箱あたりの本数")
                             .font(.title2.bold())
                             .foregroundColor(.black)
                             .frame(width: 300, height: 50,alignment: .leading)
+                            .aspectRatio(contentMode: .fit)
                         
                         TextField("１箱あたりのたばこ本数", text: self.$numberOfTabaco ).keyboardType(.numberPad)
                             .background(Color.white)
                             .frame(width: 300, height: 30)
                             .padding()
+                            .aspectRatio(contentMode: .fit)
                             
                     }
                     

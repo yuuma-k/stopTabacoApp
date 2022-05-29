@@ -29,12 +29,27 @@ struct TabacoSumView: View {
                 ZStack{
                     
                     Rectangle()
-                        .frame(width: 335, height: 150)
+                        .frame(minWidth: 200, maxWidth: 330, minHeight: 75,maxHeight: 150, alignment: .center)
+                        .aspectRatio(contentMode: .fit)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .background(Color.gray
-                            .offset(x: 3, y: 3)
-                        )
+                            .offset(x: 3, y: 3))
+                        .padding()
+                                    
+                    
+                    VStack{
+                        Text("合計額")
+                            .font(.title.bold())
+                            .padding()
+                        Text("\(self.SumpriceOfTabaco)円")
+                            .font(.title.bold())
+                            .foregroundColor(.black)
+                            .padding()
+                    }
+                    
+            }
+                    
                     
                     VStack{
                         Text("合計額")
@@ -87,7 +102,8 @@ struct TabacoSumView: View {
                 ZStack{
                     
                     Rectangle()
-                        .frame(width: 335, height: 400)
+                        .frame(minWidth: 0, maxWidth: 335, minHeight: 0,  maxHeight: 400, alignment: .center)
+                        .aspectRatio(contentMode: .fit)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .background(Color.gray
@@ -100,11 +116,13 @@ struct TabacoSumView: View {
                             .font(.title3)
                         
                         showImage()
-                            .frame(width: 200, height: 250)
+                            .frame(minWidth: 0,maxWidth: 200, minHeight: 0,maxHeight: 250, alignment: .center)
+                            .aspectRatio(contentMode: .fit)
                             
                            
                         
                         showText()
+                            .aspectRatio(contentMode: .fit)
                            
                     }
                     
@@ -118,7 +136,7 @@ struct TabacoSumView: View {
             }
         }
         
-    }
+    
     
     
     
@@ -213,11 +231,13 @@ struct TabacoSumView: View {
     }
     
     
-}
+
 
 struct TabacoSumView_Previews: PreviewProvider {
     static var previews: some View {
         TabacoSumView(result: .constant(156.0))
     }
+}
+
 }
 
