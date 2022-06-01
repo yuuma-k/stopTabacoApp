@@ -27,7 +27,7 @@ struct OneTabacoCaluView: View {
                 ZStack{
                     
                     Rectangle()
-                        .frame(minWidth: 295, maxWidth: 335, minHeight: 310, maxHeight: 375, alignment: .center)
+                        .frame(minWidth: 150, maxWidth: 335, minHeight: 115, maxHeight: 375, alignment: .center)
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(.white)
                         .cornerRadius(10)
@@ -92,7 +92,8 @@ struct OneTabacoCaluView: View {
                 ZStack{
                     
                       Rectangle()
-                            .frame(width: 335, height: 75)
+                        .frame(minWidth: 250, maxWidth: 335, minHeight: 50, maxHeight: 75, alignment: .center)
+                            .aspectRatio(contentMode: .fit)
                             .cornerRadius(10)
                             .foregroundColor(.white)
                             .background(Color.gray

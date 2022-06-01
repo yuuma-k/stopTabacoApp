@@ -26,42 +26,32 @@ struct TabacoSumView: View {
             
             VStack{
                 
+                Spacer()
+                
                 ZStack{
                     
                     Rectangle()
-                        .frame(minWidth: 200, maxWidth: 330, minHeight: 75,maxHeight: 150, alignment: .center)
+                        .frame(minWidth: 200, maxWidth: 330, minHeight: 50,maxHeight: 150, alignment: .center)
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .background(Color.gray
                             .offset(x: 3, y: 3))
                         .padding()
-                                    
                     
                     VStack{
                         Text("合計額")
                             .font(.title.bold())
-                            .padding()
+                           
                         Text("\(self.SumpriceOfTabaco)円")
                             .font(.title.bold())
                             .foregroundColor(.black)
-                            .padding()
                     }
                     
             }
                     
                     
-                    VStack{
-                        Text("合計額")
-                            .font(.title.bold())
-                            .padding()
-                        
-                        Text("\(self.SumpriceOfTabaco)円")
-                            .font(.title.bold())
-                            .foregroundColor(.black)
-                            .padding()
-                    }
-                }
+                
                 
                 HStack{
                            
@@ -77,7 +67,8 @@ struct TabacoSumView: View {
                                
                           }
                             .background(Color.black)
-                            .padding()
+                            .padding(.horizontal)
+                            
                            
                            
                            
@@ -94,21 +85,23 @@ struct TabacoSumView: View {
                                
                           }
                             .background(Color.black)
-                            .padding()
+                            .padding(.horizontal)
+                            
                            
-                        }
+                }
                 
                 
                 ZStack{
                     
                     Rectangle()
-                        .frame(minWidth: 0, maxWidth: 335, minHeight: 0,  maxHeight: 400, alignment: .center)
+                        .frame(minWidth: 180, maxWidth: 335, minHeight: 175,  maxHeight: 400, alignment: .center)
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .background(Color.gray
                             .offset(x: 3, y: 3)
                         )
+                        .padding()
                         
                     
                     VStack{
@@ -116,10 +109,8 @@ struct TabacoSumView: View {
                             .font(.title3)
                         
                         showImage()
-                            .frame(minWidth: 0,maxWidth: 200, minHeight: 0,maxHeight: 250, alignment: .center)
+                            .frame(minWidth: 0,maxWidth: 150, minHeight: 75,maxHeight: 200, alignment: .center)
                             .aspectRatio(contentMode: .fit)
-                            
-                           
                         
                         showText()
                             .aspectRatio(contentMode: .fit)
@@ -127,14 +118,15 @@ struct TabacoSumView: View {
                     }
                     
                 }
-
+                
+                Spacer()
+                
                 
                
                 
-                
-                
             }
         }
+}
         
     
     
