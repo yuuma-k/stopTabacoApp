@@ -11,7 +11,7 @@ struct OneTabacoCaluView: View {
     
     @State var priceOfBox = ""
     @State var numberOfTabaco = ""
-    @State var result = 0.0
+    @AppStorage("resultOfOne") var result = 0.0
     
     var body: some View {
         

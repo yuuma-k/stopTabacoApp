@@ -12,11 +12,14 @@ struct MainView: View {
     //Current tab
     @State var currentTab : Tab = .Map
     
+    @Binding var result:Double
+    
     //Hiding native one...
-    init(size: CGSize, bottomEdge: CGFloat){
+    init(size: CGSize, bottomEdge: CGFloat, result:Binding<Double>){
         self.size = size
         self.bottomEdge = bottomEdge
         UITabBar.appearance().isHidden = true
+        self._result = result
     }
     
     //For matched geometry effect...
@@ -26,11 +29,11 @@ struct MainView: View {
     
     var body: some View {
         
-        ZStack(alignment: .bottom) {
+        VStack{
             
             TabView(selection: $currentTab) {
                 //Tab views...
-                TabacoSumView(result: .constant(45.5))
+                TabacoSumView(result: $result)
                     .tag(Tab.Map)
                 
                 OneTabacoCaluView()
@@ -47,11 +50,7 @@ struct MainView: View {
     }
 }
 
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
 
 //Tab Enum...
 enum Tab: String,CaseIterable{

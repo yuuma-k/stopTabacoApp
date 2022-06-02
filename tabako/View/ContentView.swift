@@ -9,20 +9,18 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
+    @Binding var result:Double
+    
     var body: some View {
         GeometryReader{ proxy in
             let size = proxy.size
             let bottomEdge = proxy.safeAreaInsets.bottom
             
-            MainView(size: size, bottomEdge: bottomEdge)
+            MainView(size: size, bottomEdge: bottomEdge, result: $result)
                 .ignoresSafeArea(.all, edges:.bottom)
         }
        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

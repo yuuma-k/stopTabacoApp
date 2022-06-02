@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
+
+
 struct tabakoApp: App {
+    
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            ContentView(result:)
         }
     }
 }

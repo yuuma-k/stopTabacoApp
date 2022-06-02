@@ -9,11 +9,7 @@ import SwiftUI
 
 struct TabacoSumView: View {
     
-    @State var SumpriceOfTabaco = 0.0 {
-        didSet{
-            UserDefaults.standard.set(SumpriceOfTabaco, forKey: "SumpriceOfTabaco")
-        }
-    }
+    @AppStorage("SumTabaco") var SumpriceOfTabaco = 0.0
     
     @Binding var result:Double
     
@@ -223,13 +219,6 @@ struct TabacoSumView: View {
     }
     
     
-
-
-struct TabacoSumView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabacoSumView(result: .constant(156.0))
-    }
-}
 
 }
 
